@@ -1,7 +1,10 @@
 :root {
     --main-bg-color-dark: #000000;
     --royal-purple: #52057B;
-    --lavender-bliss: #892CDC;
-    --lilac-dream: #BC6FF1;
-    --main-bg-color-light: "#fff";
+    --primary-color: #892CDC;
+    --secondary-color: #BC6FF1;
+    --main-bg-color-light: #ffffff;
+    --high-emphasis-text: rgba(255, 255, 255, 0.87);
+    --medium-emphasis: rgba(255, 255, 255, 0.6);
+    --disabled-text: rgba(255, 255, 255, 0.38);
 }
