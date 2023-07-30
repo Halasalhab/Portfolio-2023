@@ -1,8 +1,237 @@
-@import './variables.css';
+@import "./variables.css";
 
-body{
+/* Resitting  */
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+    transition: all 0.25s ease-out;
+}
+
+  
+/* social-media */
+
+#social-media {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-text-wraper {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    align-items: center;
+    margin-block-end: 1rem;
+    color: inherit;
+}
+
+.social-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.social-icon-svg {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-block-end: 0.2rem;
+    stroke: none;
+    fill: #fff;
+}
+
+rect {
+    fill: var(--primary-color);
+}
+
+/* NavBar */
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    height: 68px;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    background-color: var(--secondary-color);
+    z-index: 1;
+}
+
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked~#nav-links-wrapper {
+    transform: translateX(0rem);
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links>li {
+    margin-inline-start: 2rem;
+}
+
+/* Header */
+#header {
+    height: 100vh;
+}
+
+/* Intro  */
+#introduction {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 13rem;
+    margin-inline-start: 9rem;
+}
+
+#introduction-text{
+flex: 1;
+}
+
+#introduction-text>h1 {
+    font-size: 4rem;
+}
+
+#introduction-text>p {
+    /* width: 50%; */
+    font-family: 'Handjet', monospace;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#introduction-img{
+    flex: 1;
+    display: flex; /* Add Flexbox container to center .gradient */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    position: relative;
+}
+
+#profile-img{
+    position: absolute;
+    top:-5rem;
+    width: 300px;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.gradient{
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(var(--secondary-color), var( --main-bg-color-dark));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+    .gradient {
+      --size: 300px;
+    }
+}
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #nav-links-wrapper {
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        transition-timing-function: cubic-bezier(10, 2, 3, 1);
+        transform: translateX(50rem);
+        top: 0;
+        z-index: 0;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    #nav-links {
+        flex-direction: column;
+        margin-block-start: 50%;
+    }
+
+    #nav-links>li {
+        margin-block: 1rem;
+        margin-inline-start: 0;
+    }
+
+    #burger {
+        position: absolute;
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 1rem;
+        top: 1.8rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #burger>div {
+        height: 2px;
+        background-color: #000;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    #menyAvPaa:checked~#burger>div {
+        background-color: #fff;
+    }
+
+    #menyAvPaa:checked~#burger>div:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    #menyAvPaa:checked~#burger>div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menyAvPaa:checked~#burger>div:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
