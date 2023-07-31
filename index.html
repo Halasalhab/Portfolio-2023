@@ -4,65 +4,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hala Salhab</title>
+  <title>Hala Salhab Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=JetBrains+Mono:wght@200;400;500&family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap&family=JetBrains+Mono:wght@200;400;500&family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
     rel="stylesheet" />
 </head>
 
 <body>
-  <aside id="social-media">
+  <aside class="social-media">
     <ul>
-      <li><a class="icon-text-wraper" href="https://www.linkedin.com/in/hala-salhab/"><i class="social-icon fa-brands fa-linkedin"></i>LinkedIn</a></li>
-      <li><a class="icon-text-wraper" href="https://github.com/Halasalhab"><i class="social-icon fa-brands fa-square-github"></i>GitHub</a></li>
-      <li><a class="icon-text-wraper" href="https://leetcode.com/halasalhab0/"><svg fill="#fff" class="social-icon-svg" viewBox="-2.4 -2.4 28.80 28.80" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="2.88" fill="#000" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>LeetCode icon</title><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"></path></g></svg>LeetCode</a></li>
+      <li><a class="icon-text-wraper" href="https://www.linkedin.com/in/hala-salhab/" target="_blank"><i
+            class="social-icon fa-brands fa-linkedin"></i>LinkedIn</a></li>
+      <li><a class="icon-text-wraper" href="https://github.com/Halasalhab" target="_blank"><i
+            class="social-icon fa-brands fa-square-github"></i>GitHub</a></li>
+      <li><a class="icon-text-wraper" href="https://leetcode.com/halasalhab0/" target="_blank"><img
+            src="./Assets/leetcode-icon.svg" alt="leetcode-icon" class="social-icon-svg" />LeetCode</a></li>
     </ul>
   </aside>
   <header id="header">
-    <nav id="navigation">
-      <p>Hala</p>
-      <input type="checkbox" id="menyAvPaa" />
-      <label id="burger" for="menyAvPaa">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-      <div id="nav-links-wrapper">
-        <ul id="nav-links">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a>Experience</a></li>
+        <li><a href="#header"><i class="fa-solid fa-house"></i></a></li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
     </nav>
-    <section id="introduction">
-      <div id="introduction-text">
-     <h1>I'm <span>Hala Salhab</span></h1>
-     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ab sit, unde et eligendi consequuntur fugit perferendis ex fugiat sapiente animi minus sint in dicta, aliquid impedit tenetur est error.
-     </p>
-    </div>
-    <div id="introduction-img">
-      <div class="gradient"></div>
-      <img src="./Assets/Hala Salhab Pro Img.png" alt='hala' id="profile-img"/>
-    </div>
-  </section>
-</header>
-
-    <!-- <main>
-      <section>
-        Hello
-      </section>
-    </main> -->
+    <section class="introduction">
+      <div class="introduction-text">
+        <h1 class="typed-out">I'm Hala Salhab</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ab sit, unde et eligendi consequuntur fugit
+          perferendis ex fugiat sapiente animi minus sint in dicta, aliquid impedit tenetur est error.
+        </p>
+      </div>
+      <div class="introduction-img">
+        <img src="./Assets/Hala Salhab Pro Img.png" alt='hala' class="profile-img" />
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about" class="about-me">
+      <div class="about-wrapper">
+        <h1>About me</h1>
+        <summary>
+          🔓Thank you for visiting HalaSalhab's portfolio. She is a passionate, motivated, ambitious software engineer who
+          loves solving problems. With a strong background in JavaScript and C++, Hala is eager to launch her career as
+          a junior software engineer.
+          <br>
+          👨‍💻Hala is a dedicated computer science student who always stays up-to-date with the latest industry trends
+          and technologies. She has experience working with HTML, CSS, JavaScript, C++, SQL, and the MERN stack(MongoDB,
+          Express.js, React, Node.js). Her GitHub portfolio showcases her projects and code samples and can be viewed
+          here:<a href="https://github.com/Halasalhab" target="_blank">https://github.com/Halasalhab</a>
+          <br>
+          📍As a proven team player with excellent communication skills, Hala thrives in collaborative environments. She
+          actively seeks opportunities to contribute her technical expertise and collaborate with innovative teams to
+          bring fresh ideas and solutions to the table.
+          <br>
+          ✔ In addition to her technical skills, she possesses strong leadership abilities and excels at coaching
+          others. Hala has experience organizing workshops and programming boot camps for kids while implementing KPIs
+          to ensure active member participation and decision-making.
+          <br>
+          If you are looking for an ambitious junior software engineer who is passionate about creating user-friendly
+          web experiences, look no further than Hala Salhab. She is excited to connect and explore potential
+          opportunities in the field. Let's make a positive impact together!
+        </summary>
+        <div class="btn-container">
+          <a href="./Assets/HalaSalhabRes.pdf" class="btn-download" download><i class="fa fa-download"></i> Download My
+            CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/c819c0ef25.js" crossorigin="anonymous"></script>
