@@ -153,7 +153,7 @@ a {
     }
 }
 
-.introduction-img {
+.profile-img-container {
     flex: 1;
     display: flex;
     align-items: center;
@@ -176,7 +176,7 @@ a {
     }
 }
 
-.introduction-img::before {
+.profile-img-container::before {
     z-index: -1;
     position: absolute;
     top: 30%;
