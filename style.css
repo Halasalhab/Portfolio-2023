@@ -592,3 +592,10 @@ a {
 /* @media only screen and (min-width: 992px) {...} */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
+/* Extra extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+    
+}
+
+
+
