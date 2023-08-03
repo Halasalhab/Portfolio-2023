@@ -53,6 +53,9 @@ a {
     color: var(--primary-color);
 }
 
+.social-icon:hover{
+    color: var(--secondary-color);
+}
 .social-icon-svg {
     width: 2.6rem;
     height: 2.6rem;
@@ -68,11 +71,11 @@ a {
     align-items: center;
     justify-content: center;
     padding-block: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    /* z-index: 8; */
     background-color: transparent;
     box-sizing: border-box;
     color: var(--royal-purple);
@@ -189,26 +192,12 @@ a {
     filter: drop-shadow(0 0 8px var(--royal-purple));
 }
 
-.profile-img {
-    position: absolute;
-    bottom: 0;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 /* about-me */
 
 .about-me {
     height: 100vh;
+    width: 100vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -218,20 +207,14 @@ a {
 }
 
 .about-wrapper {
-    width: 50%;
+    width: 100%;
+    padding-inline: 4rem;
 }
-
+.section-heading {
+    color: var(--royal-purple);
+}
 .about-wrapper>summary {
     text-align: left;
-}
-
-.about-wrapper>summary>br {
-    margin-bottom: 1rem;
-}
-
-.link-decorated {
-    text-decoration: underline;
-    color: var(--primary-color);
 }
 
 .btn-container {
@@ -617,6 +600,16 @@ a {
         height: 300px;
     }
 
+    .section-heading {
+        font-size: 4rem;
+    }
+
+    .about-wrapper summary>p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-block: 2rem;
+        line-height: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -641,9 +634,16 @@ a {
         font-size: 1rem;
     }
 
-    .typed-out{
+    .typed-out {
         font-size: 4.5rem;
     }
+   .about-wrapper{
+       padding-inline-start: 8rem;
+   }
+    .section-heading {
+        font-size: 4rem;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -653,14 +653,15 @@ a {
     body {
         font-size: 14px;
     }
+
     .introduction-text>p {
         font-size: 1rem;
     }
 
-    .typed-out{
+    .typed-out {
         font-size: 2rem;
     }
-    
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -670,6 +671,7 @@ a {
     body {
         font-size: 14px;
     }
+
     .profile-img-container {
         width: 300px;
         height: 300px;
@@ -683,9 +685,13 @@ a {
     body {
         font-size: 16px;
     }
+
     .profile-img-container {
         width: 400px;
         height: 400px;
+    }
+    .about-wrapper summary>p {
+        line-height: 1.5rem;
     }
 }
 
@@ -695,6 +701,7 @@ a {
     body {
         font-size: 18px;
     }
+
     .profile-img-container {
         width: 500px;
         height: 500px;
