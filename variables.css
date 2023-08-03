@@ -8,3 +8,21 @@
     --medium-emphasis: rgba(255, 255, 255, 0.6);
     --disabled-text: rgba(255, 255, 255, 0.38);
 }
+
+/* h stand for heading  */
+
+/* 1440px < screen  */
+.font-size-h-xl{
+
+}
+
+/* 960px < screen  */
+
+.font-size-h-md{
+    
+}
+
+/* 0px < screen  */
+.font-size-h-xs{
+    
+}
