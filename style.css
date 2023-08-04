@@ -34,7 +34,7 @@ a {
 
 .social-media {
     position: fixed;
-    top: 55%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -55,9 +55,10 @@ a {
     color: var(--primary-color);
 }
 
-.social-icon:hover{
+.social-icon:hover {
     color: var(--secondary-color);
 }
+
 .social-icon-svg {
     width: 2.6rem;
     height: 2.6rem;
@@ -73,20 +74,8 @@ a {
     align-items: center;
     justify-content: center;
     padding-block: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
     background-color: transparent;
-    box-sizing: border-box;
     color: var(--royal-purple);
-}
-
-
-.active {
-    border-bottom: 1px solid rgb(208, 208, 208);
-    background-color: var(--secondary-color);
 }
 
 .nav-links {
@@ -211,9 +200,11 @@ a {
     width: 100%;
     padding-inline: 4rem;
 }
+
 .section-heading {
     color: var(--royal-purple);
 }
+
 .about-wrapper>summary {
     text-align: left;
 }
@@ -359,12 +350,13 @@ a {
 }
 
 /* projects */
-.projects{
+.projects {
     text-align: center;
     height: auto;
     width: 100vw;
 
 }
+
 .projects-container {
     width: 100%;
     display: flex;
@@ -545,6 +537,25 @@ a {
     transform: scale(1.2, 1.2);
 }
 
+/* Footer */
+.footer {
+    width: 100vw;
+    text-align: center;
+    color: var(--royal-purple);
+}
+
+.social-links-footer {
+    display: none;
+    padding: 0;
+}
+
+.social-links-footer>li {
+    margin-inline: 1rem;
+}
+
+.footer-icon {
+    color: var(--secondary-color);
+}
 
 /* Responsive */
 
@@ -588,23 +599,33 @@ a {
         font-weight: 500;
         line-height: 1.5rem;
     }
+
     .projects-container {
         align-items: center;
         padding-inline-start: 4rem;
     }
-    .project-image{
+
+    .project-image {
         display: none;
     }
-    .project-card{
+
+    .project-card {
         width: 300px;
         height: 300px;
     }
-    .project-details{
+
+    .project-details {
         width: 100%;
     }
+
     .project-card .project-details>p {
         text-align: left;
         font-size: 1.6rem;
+    }
+    .social-links-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -633,18 +654,23 @@ a {
     .typed-out {
         font-size: 4.5rem;
     }
-   .about-wrapper{
-       padding-inline-start: 8rem;
-   }
+
+    .about-wrapper {
+        padding-inline-start: 8rem;
+    }
+
     .section-heading {
         font-size: 4rem;
     }
-    .project-card{
+
+    .project-card {
         width: 500px;
     }
-    .project-details{
+
+    .project-details {
         width: 55%;
     }
+
     .projects-container {
         align-items: center;
     }
@@ -665,6 +691,7 @@ a {
     .typed-out {
         font-size: 2rem;
     }
+
     .project-card .project-details>p {
         font-size: 1.3rem;
     }
@@ -683,10 +710,12 @@ a {
         width: 300px;
         height: 300px;
     }
+
     .projects-container {
         align-items: flex-start;
     }
-    .align-self{
+
+    .align-self {
         align-self: flex-end;
     }
 }
@@ -703,10 +732,12 @@ a {
         width: 400px;
         height: 400px;
     }
+
     .about-wrapper summary>p {
         line-height: 1.5rem;
     }
-    .project-card{
+
+    .project-card {
         width: 600px;
     }
 }
@@ -722,7 +753,8 @@ a {
         width: 500px;
         height: 500px;
     }
-    .project-card{
+
+    .project-card {
         width: 700px;
         height: 400px;
     }

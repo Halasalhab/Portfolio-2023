@@ -1,18 +1,7 @@
-window.addEventListener('scroll', function() {
-    var nav = document.getElementById('navigation');
-    
-    if (window.scrollY > 100) {
-        nav.classList.add('active');
-    } else {
-        nav.classList.remove('active');
-    }
-});
-
 //send email when clicked on email icon
 
 let emailBtn = document.getElementById('email-to')
-function sendEmail() 
-{
+function sendEmail() {
     window.location = "mailto:halasalhab0@gmail.com";
 }
 
