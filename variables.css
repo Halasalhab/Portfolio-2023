@@ -4,30 +4,7 @@
     --primary-color: #892CDC;
     --secondary-color: #BC6FF1;
     --main-bg-color-light: #ffffff;
-    --high-emphasis-text: rgba(255, 255, 255, 0.87);
-    --medium-emphasis: rgba(255, 255, 255, 0.6);
+    --high-emphasis: rgba(255, 255, 255, 0.90);
+    --medium-emphasis: #7d7d7d;
     --disabled-text: rgba(255, 255, 255, 0.38);
-    --section-title-font-size-xs: 1rem;
-    --section-title-font-size-sm: 1rem;
-    --section-title-font-size-md: 1rem;
-    --section-title-font-size-lg: 1rem;
-    --section-title-font-size-xl: 1rem;
-}
-
-/* h stand for heading  */
-
-/* 1440px < screen  */
-.font-size-h-xl{
-
-}
-
-/* 960px < screen  */
-
-.font-size-h-md{
-    
-}
-
-/* 0px < screen  */
-.font-size-h-xs{
-    
 }
